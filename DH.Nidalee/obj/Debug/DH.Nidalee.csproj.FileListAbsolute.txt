@@ -1,0 +1,13 @@
+C:\Users\dao hung\Desktop\EnsoulSharp.Dependencies-master\Loader\EnsoulSharp\LocalAssemblies\DH.Nidalee\bin\Release\DHNidalee.exe.config
+C:\Users\dao hung\Desktop\EnsoulSharp.Dependencies-master\Loader\EnsoulSharp\LocalAssemblies\DH.Nidalee\bin\Release\DHNidalee.exe
+C:\Users\dao hung\Desktop\EnsoulSharp.Dependencies-master\Loader\EnsoulSharp\LocalAssemblies\DH.Nidalee\bin\Release\DHNidalee.pdb
+C:\Users\dao hung\Desktop\EnsoulSharp.Dependencies-master\Loader\EnsoulSharp\LocalAssemblies\DH.Nidalee\bin\Release\EnsoulSharp.SDK.dll
+C:\Users\dao hung\Desktop\EnsoulSharp.Dependencies-master\Loader\EnsoulSharp\LocalAssemblies\DH.Nidalee\bin\Release\EnsoulSharp.Wrapper.dll
+C:\Users\dao hung\Desktop\EnsoulSharp.Dependencies-master\Loader\EnsoulSharp\LocalAssemblies\DH.Nidalee\bin\Release\SharpDX.Direct3D9.dll
+C:\Users\dao hung\Desktop\EnsoulSharp.Dependencies-master\Loader\EnsoulSharp\LocalAssemblies\DH.Nidalee\bin\Release\SharpDX.dll
+C:\Users\dao hung\Desktop\EnsoulSharp.Dependencies-master\Loader\EnsoulSharp\LocalAssemblies\DH.Nidalee\bin\Release\Newtonsoft.Json.dll
+C:\Users\dao hung\Desktop\EnsoulSharp.Dependencies-master\Loader\EnsoulSharp\LocalAssemblies\DH.Nidalee\obj\Debug\DH.Nidalee.csprojAssemblyReference.cache
+C:\Users\dao hung\Desktop\EnsoulSharp.Dependencies-master\Loader\EnsoulSharp\LocalAssemblies\DH.Nidalee\obj\Debug\DH.Nidalee.csproj.CoreCompileInputs.cache
+C:\Users\dao hung\Desktop\EnsoulSharp.Dependencies-master\Loader\EnsoulSharp\LocalAssemblies\DH.Nidalee\obj\Debug\DH.Nidalee.csproj.CopyComplete
+C:\Users\dao hung\Desktop\EnsoulSharp.Dependencies-master\Loader\EnsoulSharp\LocalAssemblies\DH.Nidalee\obj\Debug\DHNidalee.exe
+C:\Users\dao hung\Desktop\EnsoulSharp.Dependencies-master\Loader\EnsoulSharp\LocalAssemblies\DH.Nidalee\obj\Debug\DHNidalee.pdb

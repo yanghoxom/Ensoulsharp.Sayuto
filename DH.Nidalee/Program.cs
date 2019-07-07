@@ -242,7 +242,7 @@ namespace DH_Nidalee
 
 
             _mainMenu.Attach();
-            Chat.PrintChat("<font color=\"#FF9900\"><b>DH.Nidalee:</b></font> Anything feedback send to facebook yts.1996 Ports");
+            Chat.PrintChat("<font color=\"#FF9900\"><b>DH.Nidalee:</b></font> Anything feedback send to facebook yts.1996 Sayuto");
 
         }
 
@@ -544,9 +544,6 @@ namespace DH_Nidalee
                 if ((CW == 0 || Pounce.IsReady()) && _mainMenu["spells"].GetValue<MenuBool>("usecougarw")
                     && (Pounce.IsInRange(target, Pounce.Range * 2) || CougarDamage(target) >= target.Health))
                 {
-                    Chat.PrintChat("check 1");
-                    Chat.PrintChat("Hundted:" + TargetHunted(target).ToString());
-                    Chat.PrintChat("target distance:" + target.Distance(Me.Position).ToString());
                     if (TargetHunted(target) & target.Distance(Me.Position) <= 750 & target.Distance(Me.Position) >= 250)
                     {
                         Pounce.Cast(target.Position);
