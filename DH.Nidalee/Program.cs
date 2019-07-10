@@ -125,7 +125,7 @@ namespace DH_Nidalee
 
         //spells
 
-        private static readonly MenuSlider seth = new MenuSlider("seth", "Javelin Hitchance", 3, 1, 4);
+        private static readonly MenuSlider seth = new MenuSlider("seth", "Javelin Hitchance", 2, 1, 4);
         private static readonly MenuBool usehumanq = new MenuBool("usehumanq", "Use Javelin Toss", true);
         private static readonly MenuBool usehumanw = new MenuBool("usehumanw", "Use Bushwack", true);
         private static readonly MenuBool usecougarq = new MenuBool("usecougarq", "Use Takedown", true);
