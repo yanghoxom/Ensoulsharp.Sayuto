@@ -202,7 +202,8 @@ namespace DH.Orianna
             AIHeroClient.OnProcessSpellCast += AIBaseClientProcessSpellCast;
             Interrupter.OnInterrupterSpell += Interrupter2_OnInterruptableTarget;
 
-            Chat.PrintChat("<font color=\"#FF9900\"><b>DH.Oriana:</b></font> Anything feedback send to facebook yts.1996 Sayuto");
+            Chat.PrintChat("<font color=\"#FF9900\"><b>DH.Oriana:</b></font> Feedback send to facebook yts.1996 Sayuto");
+            Chat.PrintChat("<font color=\"#FF9900\"><b>Credits: Kortatu and XSalice</b></font>");
         }
         private static void Game_OnWndProc(WndEventArgs args)
         {

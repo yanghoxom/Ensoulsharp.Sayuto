@@ -243,8 +243,8 @@ namespace DH_Nidalee
 
             _mainMenu.Attach();
             Chat.PrintChat("<font color=\"#FF9900\"><b>DH.Nidalee:</b></font> Anything feedback send to facebook yts.1996 Sayuto");
-
-        }
+			Chat.PrintChat("<font color=\"#FF9900\"><b>Credits: Kurisu</b></font>");
+		}
 
         #endregion
 
