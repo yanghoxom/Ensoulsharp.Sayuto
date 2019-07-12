@@ -56,7 +56,7 @@ namespace DH.Ryze
             combo.Add(new MenuBool("UseQCombo", "Use Q", true));
             combo.Add(new MenuBool("UseWCombo", "Use W"));
             combo.Add(new MenuBool("UseECombo", "Use E"));
-            combo.Add(new MenuList<String>("ComboPriority", "Combo Priority", new[] { "Q(Max Damage)", "W(Max stun)" }));
+            combo.Add(new MenuList("ComboPriority", "Combo Priority", new[] { "Q(Max Damage)", "W(Max stun)" }));
             combo.Add(new MenuKeyBind("ComboActive", "Combo!", Keys.Space, KeyBindType.Press));
             Config.Add(combo);
             #endregion
@@ -81,9 +81,9 @@ namespace DH.Ryze
             #region Farming
             Menu Farm = new Menu("Farm", "Farm");
             Farm.Add(new MenuBool("EnabledFarm", "Enable! (On/Off: Mouse Scroll)"));
-            Farm.Add(new MenuList<String>("UseQFarm", "Use Q", new[] { "LastHit", "LaneClear", "Both", "No" }, "Both"));
-            Farm.Add(new MenuList<String>("UseWFarm", "Use W", new[] { "LastHit", "LaneClear", "Both", "No" }, "LaneClear"));
-            Farm.Add(new MenuList<String>("UseEFarm", "Use E", new[] { "LastHit", "LaneClear", "Both", "No" }, "LaneClear"));
+            Farm.Add(new MenuList("UseQFarm", "Use Q", new[] { "LastHit", "LaneClear", "Both", "No" }, "Both"));
+            Farm.Add(new MenuList("UseWFarm", "Use W", new[] { "LastHit", "LaneClear", "Both", "No" }, "LaneClear"));
+            Farm.Add(new MenuList("UseEFarm", "Use E", new[] { "LastHit", "LaneClear", "Both", "No" }, "LaneClear"));
             Farm.Add(new MenuSlider("LaneClearManaCheck", "Don't LaneClear if mana < %", 0, 0, 100));
 
             Farm.Add(new MenuKeyBind("LastHitActive", "LastHit!", Keys.X, KeyBindType.Press));
@@ -126,7 +126,7 @@ namespace DH.Ryze
             Config["Farm"].GetValue<MenuBool>("EnabledFarm").Enabled = !Config["Farm"].GetValue<MenuBool>("EnabledFarm").Enabled;
         }
 
-        
+
         private static void Farm(bool laneClear)
         {
             if (!Config["Farm"].GetValue<MenuBool>("EnabledFarm"))
@@ -134,9 +134,9 @@ namespace DH.Ryze
                 return;
             }
 
-            var useQi = Config["Farm"].GetValue <MenuList<String>>("UseQFarm").SelectedValue;
-            var useWi = Config["Farm"].GetValue<MenuList<String>>("UseWFarm").SelectedValue;
-            var useEi = Config["Farm"].GetValue<MenuList<String>>("UseWFarm").SelectedValue;
+            var useQi = Config["Farm"].GetValue <MenuList>("UseQFarm").SelectedValue;
+            var useWi = Config["Farm"].GetValue<MenuList>("UseWFarm").SelectedValue;
+            var useEi = Config["Farm"].GetValue<MenuList>("UseWFarm").SelectedValue;
 
             var useQ = (laneClear && (useQi == "LaneClear" || useQi == "Both")) || (!laneClear && (useQi == "LastHit" || useQi == "Both"));
             var useW = (laneClear && (useWi == "LaneClear" || useWi == "Both")) || (!laneClear && (useWi == "LastHit" || useWi == "Both"));
@@ -192,7 +192,7 @@ namespace DH.Ryze
                     }
                 }
 
-            }            
+            }
         }
 
         private static void JungleFarm()

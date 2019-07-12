@@ -163,9 +163,9 @@ namespace DH.Orianna
             //Farming menu:
             Menu Farm = new Menu("Farm", "Farm");
             Farm.Add(new MenuBool("EnabledFarm", "Enable! (On/Off: Mouse Scroll)"));
-            Farm.Add(new MenuList<String>("UseQFarm", "Use Q", new[] { "Freeze", "LaneClear", "Both", "No" }, "Both"));
-            Farm.Add(new MenuList<String>("UseWFarm", "Use W", new[] { "Freeze", "LaneClear", "Both", "No" }, "LaneClear"));
-            Farm.Add(new MenuList<String>("UseEFarm", "Use E", new[] { "Freeze", "LaneClear", "Both", "No" }, "LaneClear"));
+            Farm.Add(new MenuList("UseQFarm", "Use Q", new[] { "Freeze", "LaneClear", "Both", "No" }, "Both"));
+            Farm.Add(new MenuList("UseWFarm", "Use W", new[] { "Freeze", "LaneClear", "Both", "No" }, "LaneClear"));
+            Farm.Add(new MenuList("UseEFarm", "Use E", new[] { "Freeze", "LaneClear", "Both", "No" }, "LaneClear"));
             Farm.Add(new MenuSlider("LaneClearManaCheck", "Don't LaneClear if mana < %", 0, 0, 100));
 
             Farm.Add(new MenuKeyBind("FreezeActive", "Freeze!", Keys.X, KeyBindType.Press));
@@ -297,9 +297,9 @@ namespace DH.Orianna
             var allMinions = GameObjects.Minions.Where(x => x.IsValidTarget(Q.Range + W.Width)).Cast<AIBaseClient>().ToList();
             var rangedMinions = GameObjects.Minions.Where(x => x.IsValidTarget(Q.Range + W.Width) && x.IsRanged).Cast<AIBaseClient>().ToList();
 
-            var useQi = Config["Farm"].GetValue <MenuList<String>>("UseQFarm").SelectedValue;
-            var useWi = Config["Farm"].GetValue<MenuList<String>>("UseWFarm").SelectedValue;
-            var useEi = Config["Farm"].GetValue<MenuList<String>>("UseWFarm").SelectedValue;
+            var useQi = Config["Farm"].GetValue <MenuList>("UseQFarm").SelectedValue;
+            var useWi = Config["Farm"].GetValue<MenuList>("UseWFarm").SelectedValue;
+            var useEi = Config["Farm"].GetValue<MenuList>("UseWFarm").SelectedValue;
 
             var useQ = (laneClear && (useQi == "LaneClear" || useQi == "Both")) || (!laneClear && (useQi == "Freeze" || useQi == "Both"));
             var useW = (laneClear && (useWi == "LaneClear" || useWi == "Both")) || (!laneClear && (useWi == "Freeze" || useWi == "Both"));
@@ -376,7 +376,7 @@ namespace DH.Orianna
             {
                 var mob = mobs[0];
                 var conditionUseW = useW && W.IsReady() && W.WillHit(mob.Position, BallManager.BallPosition);
-                
+
                 if (conditionUseW)
                 {
                     W.Cast(Player.Position, true);

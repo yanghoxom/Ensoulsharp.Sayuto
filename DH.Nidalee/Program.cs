@@ -136,7 +136,7 @@ namespace DH_Nidalee
         //hengine
 
         private static readonly MenuBool usedemheals = new MenuBool("usedemheals", "Enable", true);
-        private static readonly MenuList<String> sezz = new MenuList<String>("sezz", "Heal Priority: ", new[] { "Low HP", "Highest AD" });
+        private static readonly MenuList sezz = new MenuList("sezz", "Heal Priority: ", new[] { "Low HP", "Highest AD" });
         private static readonly MenuSlider healmanapct = new MenuSlider("healmanapct", "Minimum Mana %", 55);
 
         // harrass
@@ -540,7 +540,7 @@ namespace DH_Nidalee
                     Takedown.CastOnUnit(Me);
                 }
 
-                // Check is pounce is ready 
+                // Check is pounce is ready
                 if ((CW == 0 || Pounce.IsReady()) && _mainMenu["spells"].GetValue<MenuBool>("usecougarw")
                     && (Pounce.IsInRange(target, Pounce.Range * 2) || CougarDamage(target) >= target.Health))
                 {
@@ -561,7 +561,7 @@ namespace DH_Nidalee
                         Swipe.Cast(target.Position);
                 }
 
-                // force transform if q ready and no collision 
+                // force transform if q ready and no collision
                 if (HQ == 0 && _mainMenu["spells"].GetValue<MenuBool>("usecougarr"))
                 {
                     if (!Aspectofcougar.IsReady())
@@ -581,7 +581,7 @@ namespace DH_Nidalee
                         Aspectofcougar.Cast();
                 }
 
-                // Switch to human form if can kill in aa and cougar skill not available      
+                // Switch to human form if can kill in aa and cougar skill not available
                 if ((CW != 0 || !Pounce.IsReady()) && (CE != 0 || !Swipe.IsReady()) && (CQ != 0 || !Takedown.IsReady()))
                 {
                     if (target.Distance(Me.Position) > Takedown.Range && CanKillAA(target))
@@ -597,7 +597,7 @@ namespace DH_Nidalee
 
             }
 
-            // human Q 
+            // human Q
             if (!_cougarForm && target.IsValidTarget(Javelin.Range))
             {
                 var qtarget = TargetSelector.GetTarget(Javelin.Range);
@@ -614,7 +614,7 @@ namespace DH_Nidalee
             // Human combo
             if (!_cougarForm && target.IsValidTarget(Javelin.Range))
             {
-                // Switch to cougar if target hunted or can kill target 
+                // Switch to cougar if target hunted or can kill target
                 if (Aspectofcougar.IsReady() && _mainMenu["spells"].GetValue<MenuBool>("usecougarr")
                     && (TargetHunted(target) || target.Health <= CougarDamage(target) && (HQ != 0 || !Javelin.IsReady())))
                 {
@@ -679,7 +679,7 @@ namespace DH_Nidalee
             var selfManaPercent = _mainMenu["hengine"].GetValue<MenuSlider>("healmanapct").Value;
 
             AIHeroClient target;
-            if (_mainMenu["hengine"].GetValue<MenuList<String>>("sezz").SelectedValue == "Low HP")
+            if (_mainMenu["hengine"].GetValue<MenuList>("sezz").SelectedValue == "Low HP")
             {
                 target =
                     ObjectManager.Get<AIHeroClient>()
@@ -1098,13 +1098,13 @@ namespace DH_Nidalee
             // Vector pointing from apex to circle-center point.
             Vector2 axisVect = apexPoint - circleCenter;
 
-            // X is lying in cone only if it's lying in 
-            // infinite version of its cone -- that is, 
+            // X is lying in cone only if it's lying in
+            // infinite version of its cone -- that is,
             // not limited by "round basement".
-            // We'll use dotProd() to 
+            // We'll use dotProd() to
             // determine angle between apexToXVect and axis.
             bool isInInfiniteCone = DotProd(apexToXVect, axisVect) / Magn(apexToXVect) / Magn(axisVect) >
-                // We can safely compare cos() of angles 
+                // We can safely compare cos() of angles
                 // between vectors instead of bare angles.
                 Math.Cos(halfAperture);
 
@@ -1112,7 +1112,7 @@ namespace DH_Nidalee
                 return false;
 
             // X is contained in cone only if projection of apexToXVect to axis
-            // is shorter than axis. 
+            // is shorter than axis.
             // We'll use dotProd() to figure projection length.
             bool isUnderRoundCap = DotProd(apexToXVect, axisVect) / Magn(axisVect) < Magn(axisVect);
 
