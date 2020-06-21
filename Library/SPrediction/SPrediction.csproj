@@ -38,13 +38,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EnsoulSharp.SDK">
-      <HintPath>C:\Users\An Nhi\Desktop\EnsoulSharp\Loader\EnsoulSharp\System\EnsoulSharp.SDK.dll</HintPath>
+      <HintPath>C:\Users\An Nhi\Desktop\EnsoulSharp.Dependencies-master\Loader\EnsoulSharp\System\EnsoulSharp.SDK.dll</HintPath>
     </Reference>
     <Reference Include="EnsoulSharp.Wrapper">
-      <HintPath>C:\Users\An Nhi\Desktop\EnsoulSharp\Loader\EnsoulSharp\System\EnsoulSharp.Wrapper.dll</HintPath>
+      <HintPath>C:\Users\An Nhi\Desktop\EnsoulSharp.Dependencies-master\Loader\EnsoulSharp\System\EnsoulSharp.Wrapper.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX">
-      <HintPath>C:\Users\An Nhi\Desktop\EnsoulSharp\Loader\EnsoulSharp\System\SharpDX.dll</HintPath>
+      <HintPath>C:\Users\An Nhi\Desktop\EnsoulSharp.Dependencies-master\Loader\EnsoulSharp\System\SharpDX.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
