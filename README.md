@@ -14,7 +14,7 @@ Chat Group: https://t.me/joinchat/JjuaL0XzLZkcse9H_SvEvg
 # Support Champions:
 Ahri  
 Akali  
-Camille ( Turn off W in farm )  
+Camille
 Ekko  
 Fiora  
 Fizz  
