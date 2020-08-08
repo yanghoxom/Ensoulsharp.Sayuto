@@ -12,42 +12,41 @@ Channel: https://t.me/joinchat/AAAAAE15y7kZXRHjTTUqCg
 Chat Group: https://t.me/joinchat/JjuaL0XzLZkcse9H_SvEvg
 
 # Support Champions:
-Ahri
-Akali
-Camille ( Turn off W in farm )
-Ekko
-Fiora
-Fizz
-Gangplank
-Garen
-Jax
-Jayce
-Kayle
-Kennen
-Khazix
-KogMaw
-Hecarim (Just use Q after AA)
-LeeSin
-Malphite (Simple Malphite Harass and Combo, harass will not use ultimate)
-MasterYi
-MonkeyKing (Just use Q after AA)
-Mordekaiser
-Nidalee
-Olaf
-Orianna
-Pantheon
-Qiyana
-Renekton
-Rumble
-Ryze
-Sett
-Sion
-Syndra
-Tristana
-Trundle  (Just use Q after AA)
-Velkoz
-Viktor
-Volibear
-Yasuo
-Zed
-Ziggs
+Ahri  
+Akali  
+Camille ( Turn off W in farm )  
+Ekko  
+Fiora  
+Fizz  
+Gangplank  
+Garen  
+Jax  
+Jayce  
+Kayle  
+Kennen  
+Khazix  
+KogMaw  
+Hecarim (Just use Q after AA)  
+LeeSin  
+Malphite (Simple Malphite Harass and Combo, harass will not use ultimate)  
+MasterYi  
+MonkeyKing (Just use Q after AA)  
+Mordekaiser  
+Nidalee  
+Olaf  
+Orianna  
+Pantheon  
+Qiyana  
+Renekton  
+Rumble  
+Ryze  
+Sett   
+Syndra  
+Tristana  
+Trundle  (Just use Q after AA)  
+Velkoz  
+Viktor  
+Volibear  
+Yasuo  
+Zed  
+Ziggs  
