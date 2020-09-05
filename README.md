@@ -42,6 +42,7 @@ Rumble
 Ryze  
 Sett   
 Syndra  
+Teemo
 Tristana  
 Trundle  (Just use Q after AA)  
 Velkoz  
